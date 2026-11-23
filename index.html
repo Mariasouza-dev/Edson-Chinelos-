@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edson Chinelos - Loja online de chinelos e sandálias de qualidade. Encontre o conforto perfeito para seus pés com estilo e preço justo.">
+    <meta name="keywords" content="chinelos, sandálias, calçados, loja online, conforto, moda">
+    <meta name="author" content="Edson Chinelos">
+    <title>Edson Chinelos | Conforto e Estilo para seus Pés</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <a href="#home" class="header__logo" id="logo">
+                <img src="assets/images/logo.png" alt="Edson Chinelos Logo" class="header__logo-img">
+                <span class="header__logo-text">Edson <span class="highlight">Chinelos</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="header__nav" id="nav-desktop">
+                <ul class="header__nav-list">
+                    <li><a href="#home" class="header__nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#servicos" class="header__nav-link" data-section="servicos">Serviços</a></li>
+                    <li><a href="#produtos" class="header__nav-link" data-section="produtos">Produtos</a></li>
+                    <li><a href="#contato" class="header__nav-link" data-section="contato">Contato</a></li>
+                    <li><a href="#sobre" class="header__nav-link" data-section="sobre">Sobre Nós</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header__actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <i data-lucide="sun" class="theme-toggle__icon theme-toggle__icon--sun"></i>
+                    <i data-lucide="moon" class="theme-toggle__icon theme-toggle__icon--moon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav__backdrop" id="mobile-nav-backdrop"></div>
+            <div class="mobile-nav__panel">
+                <div class="mobile-nav__header">
+                    <a href="#home" class="header__logo">
+                        <img src="assets/images/logo.png" alt="Edson Chinelos Logo" class="header__logo-img">
+                        <span class="header__logo-text">Edson <span class="highlight">Chinelos</span></span>
+                    </a>
+                    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Fechar menu">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <nav class="mobile-nav__nav">
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item">
+                            <a href="#home" class="mobile-nav__link active" data-section="home">
+                                <i data-lucide="home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#servicos" class="mobile-nav__link" data-section="servicos">
+                                <i data-lucide="briefcase"></i>
+                                <span>Serviços</span>
+                            </a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#produtos" class="mobile-nav__link" data-section="produtos">
+                                <i data-lucide="shopping-bag"></i>
+                                <span>Produtos</span>
+                            </a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#contato" class="mobile-nav__link" data-section="contato">
+                                <i data-lucide="mail"></i>
+                                <span>Contato</span>
+                            </a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#sobre" class="mobile-nav__link" data-section="sobre">
+                                <i data-lucide="users"></i>
+                                <span>Sobre Nós</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav__footer">
+                    <p>&copy; 2026 Edson Chinelos. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== HERO / HOME ========== -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <img src="assets/images/hero-banner.png" alt="Chinelos na praia" class="hero__bg-img">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__container">
+                <div class="hero__content">
+                    <span class="hero__badge">✨ Nova Coleção 2026</span>
+                    <h1 class="hero__title">
+                        Conforto e Estilo<br>
+                        <span class="hero__title--gradient">Para Seus Pés</span>
+                    </h1>
+                    <p class="hero__description">
+                        Descubra chinelos e sandálias que combinam design moderno, materiais premium e o conforto que você merece. Feitos para quem valoriza cada passo.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#produtos" class="btn btn--primary">
+                            <i data-lucide="shopping-bag"></i>
+                            <span>Ver Produtos</span>
+                        </a>
+                        <a href="#sobre" class="btn btn--outline">
+                            <i data-lucide="play-circle"></i>
+                            <span>Conheça Nossa História</span>
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-target="5000">0</span>
+                            <span class="hero__stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-target="150">0</span>
+                            <span class="hero__stat-label">Modelos Disponíveis</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-target="10">0</span>
+                            <span class="hero__stat-label">Anos de Experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <i data-lucide="chevrons-down"></i>
+            </div>
+        </section>
+
+        <!-- ========== SERVIÇOS ========== -->
+        <section class="services" id="servicos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__tag">Nossos Serviços</span>
+                    <h2 class="section-header__title">O Que Oferecemos</h2>
+                    <p class="section-header__subtitle">Serviços pensados para garantir a melhor experiência de compra</p>
+                </div>
+                <div class="services__grid">
+                    <article class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i data-lucide="truck"></i>
+                        </div>
+                        <h3 class="service-card__title">Entrega Rápida</h3>
+                        <p class="service-card__description">Receba seu pedido em até 3 dias úteis para todo o Brasil. Frete grátis em compras acima de R$ 150.</p>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card__icon">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h3 class="service-card__title">Personalização</h3>
+                        <p class="service-card__description">Crie seu chinelo exclusivo! Escolha cores, estampas e adicione seu nome ou marca personalizada.</p>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card__icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3 class="service-card__title">Garantia de Qualidade</h3>
+                        <p class="service-card__description">Materiais de alta qualidade e durabilidade garantida. Troque gratuitamente em até 30 dias.</p>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card__icon">
+                            <i data-lucide="headphones"></i>
+                        </div>
+                        <h3 class="service-card__title">Atendimento Premium</h3>
+                        <p class="service-card__description">Suporte dedicado via WhatsApp, e-mail e telefone. Estamos aqui para ajudar sempre que precisar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PRODUTOS ========== -->
+        <section class="products" id="produtos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__tag">Nossos Produtos</span>
+                    <h2 class="section-header__title">Coleção em Destaque</h2>
+                    <p class="section-header__subtitle">Selecione o modelo perfeito para cada momento do seu dia</p>
+                </div>
+                <div class="products__grid">
+                    <article class="product-card" data-aos="zoom-in">
+                        <div class="product-card__badge">Novo</div>
+                        <div class="product-card__image">
+                            <img src="assets/images/product-1.png" alt="Chinelo Coral Sunset" loading="lazy">
+                            <div class="product-card__overlay">
+                                <button class="product-card__action" aria-label="Ver detalhes">
+                                    <i data-lucide="eye"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Adicionar aos favoritos">
+                                    <i data-lucide="heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Chinelos</span>
+                            <h3 class="product-card__name">Coral Sunset</h3>
+                            <div class="product-card__rating">
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <span>(47)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price--old">R$ 89,90</span>
+                                <span class="product-card__price--current">R$ 69,90</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="product-card__badge product-card__badge--hot">Popular</div>
+                        <div class="product-card__image">
+                            <img src="assets/images/product-2.png" alt="Sandália Navy Blue" loading="lazy">
+                            <div class="product-card__overlay">
+                                <button class="product-card__action" aria-label="Ver detalhes">
+                                    <i data-lucide="eye"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Adicionar aos favoritos">
+                                    <i data-lucide="heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Sandálias</span>
+                            <h3 class="product-card__name">Navy Slide</h3>
+                            <div class="product-card__rating">
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star"></i>
+                                <span>(32)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price--current">R$ 99,90</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="product-card__image">
+                            <img src="assets/images/product-3.png" alt="Chinelo Tropical Teal" loading="lazy">
+                            <div class="product-card__overlay">
+                                <button class="product-card__action" aria-label="Ver detalhes">
+                                    <i data-lucide="eye"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Adicionar aos favoritos">
+                                    <i data-lucide="heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Chinelos</span>
+                            <h3 class="product-card__name">Tropical Teal</h3>
+                            <div class="product-card__rating">
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <span>(58)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price--old">R$ 79,90</span>
+                                <span class="product-card__price--current">R$ 59,90</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="product-card__badge product-card__badge--sale">-25%</div>
+                        <div class="product-card__image">
+                            <img src="assets/images/product-4.png" alt="Sandália Elegance" loading="lazy">
+                            <div class="product-card__overlay">
+                                <button class="product-card__action" aria-label="Ver detalhes">
+                                    <i data-lucide="eye"></i>
+                                </button>
+                                <button class="product-card__action" aria-label="Adicionar aos favoritos">
+                                    <i data-lucide="heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Sandálias</span>
+                            <h3 class="product-card__name">Elegance Nude</h3>
+                            <div class="product-card__rating">
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star" class="star--filled"></i>
+                                <i data-lucide="star"></i>
+                                <span>(21)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price--old">R$ 159,90</span>
+                                <span class="product-card__price--current">R$ 119,90</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="products__cta">
+                    <a href="#" class="btn btn--primary btn--lg">
+                        <span>Ver Todos os Produtos</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTATO ========== -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__tag">Fale Conosco</span>
+                    <h2 class="section-header__title">Entre em Contato</h2>
+                    <p class="section-header__subtitle">Tire suas dúvidas, faça encomendas ou envie sugestões</p>
+                </div>
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Rua das Sandálias, 123<br>Centro - São Paulo, SP</p>
+                            </div>
+                        </div>
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>contato@edsonchinelos.com.br</p>
+                            </div>
+                        </div>
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h4>Horário</h4>
+                                <p>Seg - Sex: 8h às 18h<br>Sáb: 8h às 13h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contact-form">
+                        <div class="contact__form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecione um assunto</option>
+                                <option value="duvida">Dúvida sobre produto</option>
+                                <option value="encomenda">Encomenda personalizada</option>
+                                <option value="troca">Troca ou devolução</option>
+                                <option value="parceria">Parceria comercial</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--lg btn--full" id="submit-btn">
+                            <i data-lucide="send"></i>
+                            <span>Enviar Mensagem</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SOBRE NÓS ========== -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__content">
+                        <span class="section-header__tag">Sobre Nós</span>
+                        <h2 class="section-header__title" style="text-align: left;">Nossa História</h2>
+                        <p class="about__text">
+                            A <strong>Edson Chinelos</strong> nasceu da paixão por calçados confortáveis e acessíveis. Há mais de <strong>10 anos</strong> no mercado, nos dedicamos a criar chinelos e sandálias que combinam estilo, conforto e durabilidade.
+                        </p>
+                        <p class="about__text">
+                            Cada produto é feito com materiais cuidadosamente selecionados, pensando em proporcionar a melhor experiência para os seus pés. Do design à entrega, nossa missão é superar suas expectativas.
+                        </p>
+                        <div class="about__values">
+                            <div class="about__value">
+                                <div class="about__value-icon">
+                                    <i data-lucide="gem"></i>
+                                </div>
+                                <div>
+                                    <h4>Qualidade Premium</h4>
+                                    <p>Materiais selecionados e acabamento impecável</p>
+                                </div>
+                            </div>
+                            <div class="about__value">
+                                <div class="about__value-icon">
+                                    <i data-lucide="heart-handshake"></i>
+                                </div>
+                                <div>
+                                    <h4>Compromisso</h4>
+                                    <p>Satisfação do cliente é nossa prioridade</p>
+                                </div>
+                            </div>
+                            <div class="about__value">
+                                <div class="about__value-icon">
+                                    <i data-lucide="leaf"></i>
+                                </div>
+                                <div>
+                                    <h4>Sustentabilidade</h4>
+                                    <p>Produção consciente e responsável</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__visual">
+                        <div class="about__visual-card">
+                            <div class="about__visual-number">10+</div>
+                            <div class="about__visual-label">Anos no<br>Mercado</div>
+                        </div>
+                        <div class="about__visual-card about__visual-card--accent">
+                            <div class="about__visual-number">5K+</div>
+                            <div class="about__visual-label">Clientes<br>Felizes</div>
+                        </div>
+                        <div class="about__visual-card about__visual-card--dark">
+                            <div class="about__visual-number">150+</div>
+                            <div class="about__visual-label">Modelos<br>Exclusivos</div>
+                        </div>
+                        <div class="about__visual-card about__visual-card--gradient">
+                            <div class="about__visual-number">100%</div>
+                            <div class="about__visual-label">Satisfação<br>Garantida</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#home" class="header__logo">
+                        <img src="assets/images/logo.png" alt="Edson Chinelos Logo" class="header__logo-img">
+                        <span class="header__logo-text">Edson <span class="highlight">Chinelos</span></span>
+                    </a>
+                    <p class="footer__brand-text">Conforto e estilo para seus pés. Chinelos e sandálias de qualidade com entrega para todo o Brasil.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="YouTube">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Categorias</h4>
+                    <ul>
+                        <li><a href="#">Chinelos Masculinos</a></li>
+                        <li><a href="#">Chinelos Femininos</a></li>
+                        <li><a href="#">Sandálias</a></li>
+                        <li><a href="#">Personalizados</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4 class="footer__title">Newsletter</h4>
+                    <p>Receba novidades e promoções exclusivas diretamente no seu e-mail.</p>
+                    <form class="footer__newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail" required>
+                        <button type="submit" aria-label="Inscrever-se">
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Edson Chinelos. Todos os direitos reservados.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
